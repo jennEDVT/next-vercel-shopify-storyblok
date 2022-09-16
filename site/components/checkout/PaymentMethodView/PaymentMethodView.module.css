@@ -1,4 +1,4 @@
-.fieldset {
+/* .fieldset {
   @apply flex flex-col my-3;
 }
 
@@ -14,4 +14,4 @@
 .fieldset .input:focus,
 .fieldset .select:focus {
   @apply outline-none shadow-outline-normal;
-}
+} */
