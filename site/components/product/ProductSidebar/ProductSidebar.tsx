@@ -42,7 +42,7 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
   }
 
   return (
-    <div className={className}>
+    <div className={className + ' jb-ProductSidebar'}>
       <ProductOptions
         options={product.options}
         selectedOptions={selectedOptions}

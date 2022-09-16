@@ -1,13 +1,13 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "Moi Outlet Sandbox DEMO",
+  "titleTemplate": "%s - Moi Outlet",
+  "description": "Moi Outlet Sandbox demo description...",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "Moi Outlet Sandbox DEMO",
+    "description": "Moi Outlet Sandbox demo description...",
     "type": "website",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "",
+    "site_name": "Moi Outlet Sandbox DEMO",
     "images": [
       {
         "url": "/card.png",

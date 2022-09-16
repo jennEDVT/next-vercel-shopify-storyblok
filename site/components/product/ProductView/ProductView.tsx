@@ -25,7 +25,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
   return (
     <>
       <Container className="max-w-none w-full" clean>
-        <div className={cn(s.root, 'fit')}>
+        <div className={cn(s.root, 'fit jb-ProductView')}>
           <div className={cn(s.main, 'fit')}>
             <ProductTag
               name={product.name}

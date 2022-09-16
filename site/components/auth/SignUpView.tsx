@@ -63,7 +63,7 @@ const SignUpView: FC<Props> = () => {
   return (
     <form
       onSubmit={handleSignup}
-      className="w-80 flex flex-col justify-between p-3"
+      className="jb-SignUpView w-80 flex flex-col justify-between p-3"
     >
       <div className="flex justify-center pb-12 ">
         <Logo width="64px" height="64px" />

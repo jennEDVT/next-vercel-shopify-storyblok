@@ -12,7 +12,7 @@ interface ProductTagProps {
 const ProductTag: React.FC<ProductTagProps> = ({
   name,
   price,
-  className = '',
+  className = 'jb-ProductTag',
   fontSize = 32,
 }) => {
   return (

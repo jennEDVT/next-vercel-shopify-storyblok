@@ -20,7 +20,7 @@ const Quantity: FC<QuantityProps> = ({
   max = 6,
 }) => {
   return (
-    <div className="flex flex-row h-9">
+    <div className="jb-Quantity flex flex-row h-9">
       <button className={s.actions} onClick={handleRemove}>
         <Cross width={20} height={20} />
       </button>

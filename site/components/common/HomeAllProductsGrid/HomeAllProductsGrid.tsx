@@ -21,7 +21,7 @@ const HomeAllProductsGrid: FC<Props> = ({
     <div className={s.root}>
       <div className={s.asideWrapper}>
         <div className={s.aside}>
-          <ul className="mb-10">
+          <ul className="jb-HomeAllProductsGrid mb-10">
             <li className="py-1 text-base font-bold tracking-wide">
               <Link href={getCategoryPath('')}>
                 <a>All Categories</a>

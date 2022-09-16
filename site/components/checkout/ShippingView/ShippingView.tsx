@@ -45,7 +45,7 @@ const ShippingView: FC = () => {
   }
 
   return (
-    <form className="h-full" onSubmit={handleSubmit}>
+    <form className="h-full jb-ShippingView" onSubmit={handleSubmit}>
       <SidebarLayout handleBack={() => setSidebarView('CHECKOUT_VIEW')}>
         <div className="px-4 sm:px-6 flex-1">
           <h2 className="pt-1 pb-8 text-2xl font-semibold tracking-wide cursor-pointer inline-block">
