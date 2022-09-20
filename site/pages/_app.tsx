@@ -6,6 +6,12 @@ import { FC, useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import { Head } from '@components/common'
 import { ManagedUIContext } from '@components/ui/context'
+import { storyblokInit, apiPlugin } from '@storyblok/react'
+
+storyblokInit({
+  accessToken: 'Rm6NUxAB9ucRFNPYGrZFNQtt',
+  use: [apiPlugin],
+})
 
 const Noop: FC = ({ children }) => <>{children}</>
 

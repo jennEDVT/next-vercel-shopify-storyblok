@@ -4,15 +4,23 @@ import { ProductCard } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
+import { getStoryblokApi } from '@storyblok/react'
 
 export async function getStaticProps({
   preview,
   locale,
   locales,
 }: GetStaticPropsContext) {
+  let slug = 'marketing-pages/careers'
+  let sbParams = {
+    version: 'draft', // or 'published'
+  }
+  const storyblokApi = getStoryblokApi()
+  let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams)
+
   const config = { locale, locales }
   const productsPromise = commerce.getAllProducts({
-    variables: { first: 6 },
+    variables: { first: 7 },
     config,
     preview,
     // Saleor provider only
@@ -30,6 +38,8 @@ export async function getStaticProps({
       categories,
       brands,
       pages,
+      story: data ? data.story : false,
+      key: data ? data.story.id : false,
     },
     revalidate: 60,
   }
@@ -37,7 +47,10 @@ export async function getStaticProps({
 
 export default function Home({
   products,
+  story,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  console.log('story', story)
+
   return (
     <>
       <Grid variant="filled">
